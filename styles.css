@@ -1,0 +1,129 @@
+/* General */
+/* Footer */
+/* Footer */
+footer {
+    background-color: white; /* Color del fondo del footer */
+    color: #333; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    padding: 15px 0; /* Espaciado */
+    width: 100%; /* Ancho completo */
+    position: relative; /* Para posicionar adecuadamente */
+    bottom: 0; /* Asegurarse de que esté al final de la página */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacar */
+}
+
+footer a {
+    color: #24B59D; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+header {
+    background-color: white;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin-top: 15px;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+/* Premios */
+.premios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.premio {
+    position: relative;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+    padding: 20px;
+}
+
+.premio:hover {
+    transform: translateY(-5px);
+}
+
+.premio img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Etiqueta sobre la imagen */
+.etiqueta {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(36, 181, 157, 0.9);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #24B59D;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #F14CAE;
+    transform: translateY(-3px);
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
